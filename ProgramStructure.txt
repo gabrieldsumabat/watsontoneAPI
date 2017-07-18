@@ -1,0 +1,13 @@
+The overall program structure is broken down into a write cycle responsible for data creation and a read cycle responsible for data analysis.
+
+WRITE CYCLE:
+toneDBUpdate: Detects when a new email arrives and begins the write cycle.
+	emailExtraction: Extracts information from newly arrived emails.
+	ApiToDB: Writes the tone values to the database when new emails arrive.
+		watsonToneAPI: Accesses the Watson Tone API to analyze the input text and return tone values.
+
+READ CYCLE:
+(PDF Production Script):
+
+
+(WebSite):
