@@ -4,8 +4,8 @@ from watson_developer_cloud import ToneAnalyzerV3
 
 def watsonAPI(text):
     tone_analyzer = ToneAnalyzerV3(
-       username='1fe1f790-1438-49c3-b0a6-816d9b91121d',
-       password='jpy4qzzKlfV0',
+       username='USERNAME',
+       password='PASSWORD',
        version='2016-05-19 ')
     dumpReturned=json.dumps(tone_analyzer.tone(text=text), indent=2)
     data=json.loads(dumpReturned)  
